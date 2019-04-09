@@ -1,0 +1,52 @@
+/*menu: rgba(0,0,0,0.87)
+signin: #fff, linear-gradient(top,#4387fd,#4683ea)
+google search: #757575, #f2f2f2
+footer: #5f6368, #f2f2f2*/
+* {
+  font-family: arial, sans-serif;
+  font-size: 13px;
+}
+
+.menu-bar a {
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.btn {
+  font-weight: bold;
+}
+
+.menu-bar__btn {
+  /*trocar para linear gradient depois*/
+  color: #fff;
+  background-color: #4387fd;
+}
+
+.search-box__btn {
+  background-color: #f2f2f2;
+  color: #757575;
+}
+
+.search-box__btn:hover {
+  color: #222;
+  box-shadow: 0 0 0.5px 0.5px rgba(0, 0, 0, 0.5);
+}
+
+.search-box__input {
+  border: thin solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+  padding: 4px;
+}
+
+.search-box__input:focus, .search-box__input:hover {
+  outline: none;
+  box-shadow: 0 2px 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+footer {
+  background-color: #f2f2f2;
+  border-top: thin solid rgba(0, 0, 0, 0.1);
+}
+
+footer a {
+  color: #5f6368;
+}

@@ -1,0 +1,52 @@
+.menu-bar {
+    display: flex;
+    align-items: center;
+    margin: 8px 23px;
+
+    * {
+        margin: 8px;
+    }
+}
+
+.btn{
+    border-radius: 2px;
+    border: none;
+}
+
+.menu-bar__btn {
+    padding: 7.5px 13px;
+}
+
+.google-apps-bento {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin: 0 15px;
+    background-image: url("../images/icons.png");
+    background-position: -139px -45px;
+    opacity: 0.55;
+    cursor: pointer;
+
+    &:hover {
+        opacity: 1;
+    }
+}
+
+.search-box__btn{
+    padding: 8.5px 15px;
+    cursor: pointer;
+    margin: 0 4px;
+}
+
+.search-link:hover {
+    text-decoration: none;
+}
+
+.search-box__input{
+    margin: 30px;
+    width: 570px;
+    height: 33px;
+    padding: 5px;
+    border-radius: 2px;
+}
+

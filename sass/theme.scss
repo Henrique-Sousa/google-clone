@@ -1,0 +1,68 @@
+/*menu: rgba(0,0,0,0.87)
+signin: #fff, linear-gradient(top,#4387fd,#4683ea)
+google search: #757575, #f2f2f2
+footer: #5f6368, #f2f2f2*/
+
+
+$gray--menu-bar: rgba(0,0,0,0.87);
+$on-primary-color: #fff;
+$primary-color: #4387fd;
+$primary-color--light: #4683ea;
+$gray--search: #f2f2f2;
+$gray--background: #f2f2f2;
+$gray--search: $gray--background;
+$gray--footer: $gray--background;
+$on-gray--search: #757575;
+$on-gray--footer: #5f6368;
+$button-hover: #222;
+$button-border-hover: #c6c6c6;
+
+* {
+    font-family: arial, sans-serif;
+    font-size: 13px;
+}
+
+.menu-bar a {
+    color: $gray--menu-bar;
+}
+
+.btn{
+    font-weight: bold;
+}
+
+.menu-bar__btn {
+    /*trocar para linear gradient depois*/
+    color: $on-primary-color;
+    background-color: $primary-color;
+}
+
+.search-box__btn{
+    background-color: $gray--search;
+    color: $on-gray--search;
+
+      &:hover{
+        color: $button-hover;
+        // border: thin solid $button-border-hover;
+        box-shadow: 0 0 0.5px 0.5px rgba(0, 0, 0, 0.5);
+    }
+}
+
+.search-box__input{
+    border: thin solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+    padding: 4px;
+
+    &:focus, &:hover{
+        outline: none;
+        box-shadow: 0 2px 1px 1px rgba(0, 0, 0, 0.3);
+    }
+}
+
+footer{
+    background-color: $gray--footer;
+    border-top: thin solid rgba(0, 0 ,0, 0.1);
+
+    a {
+        color: #5f6368;
+    }
+}
